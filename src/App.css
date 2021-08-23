@@ -7,8 +7,8 @@
 }
 .App {
   text-align: center;
-  background-image: url('./bg.svg');
-  background-image: url('./Design98-1.jpg');
+/*   background-image: url('./bg.svg');
+  background-image: url('./Design98-1.jpg'); */
   background-size:90%;
   background-repeat: no-repeat;
   background-position: center;
@@ -38,11 +38,13 @@
 
 }
 .buttom-card{
-  height: 25rem;
-  width: 25rem;
+  height: 31rem;
+  width: 58rem;
   position: absolute;
-  bottom: 0;
+  bottom: -3rem;
   right: 0;
+  border-bottom-left-radius: 355px;
+  border-bottom-right-radius: 0;
 
 }
 
@@ -54,8 +56,8 @@
 .img-hero{
   width: 42vw;
   position: absolute;
-  top: 8rem;
-  left: 9rem;
+  top: 6.5rem;
+  left: 8rem;
   box-shadow: -8px 8px 0px 1px  rgba(255, 255, 255, 0.849);
 }
 
@@ -76,10 +78,12 @@ ul.navbar-nav li a{
 }
 footer div div {
   display: inline-block;
+  
 }
 
 footer div div a {
   padding: 5px;
+  margin-inline: 3rem;
   border-radius: 25%;
   color: white;
 

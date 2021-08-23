@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <footer className='mb-5 p-b2'>
+        <footer className='d-flex mb-5 p-b2'>
             <div>
                 <div>
                     <a href='#'>
