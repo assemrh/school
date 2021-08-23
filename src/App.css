@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500&display=swap');
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --derege:40deg;
+  
+}
+.App {
+  text-align: center;
+  background-image: url('./bg.svg');
+  background-image: url('./Design98-1.jpg');
+  background-size:90%;
+  background-repeat: no-repeat;
+  background-position: center;
+/*   height: 768px !important;
+  width: 1366px; */
+  
+}
+
+.sari-card{
+  background-color: #FDDE51;
+}
+
+.top-card{
+  position: absolute;
+  -ms-transform: rotate(var(--derege)); /* IE 9 */
+  -webkit-transform: rotate(var(--derege)); /* Chrome, Safari, Opera */
+  box-shadow: 12px 12px 0px 4px rgba(253, 221, 81, 0.438);
+
+  width: 50vh;
+  height: 52vh;
+  top: -25vh;
+  left: -60px;
+  transform: rotate(var(--derege));
+}
+.top-card,.buttom-card{
+  border-radius: 5rem;
+
+}
+.buttom-card{
+  height: 25rem;
+  width: 25rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+.App-header {
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.img-hero{
+  width: 42vw;
+  position: absolute;
+  top: 8rem;
+  left: 9rem;
+  box-shadow: -8px 8px 0px 1px  rgba(255, 255, 255, 0.849);
+}
+
+.img-hero img{
+  width: 100%;
+}
+ul.navbar-nav li:last-child{
+  background-color: #FDDE51;
+  border-radius: 5px;
+}
+ul.navbar-nav li:last-child a{
+
+  color:#566777 !important;
+  
+}
+ul.navbar-nav li a{
+  font-family: 'Tajawal', sans-serif;
+}
+footer div div {
+  display: inline-block;
+}
+
+footer div div a {
+  padding: 5px;
+  border-radius: 25%;
+  color: white;
+
+}
