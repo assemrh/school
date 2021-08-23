@@ -27,6 +27,38 @@
 
 import React from 'react'
 
+
+
+let navs = [
+  {
+    name: 'الرئيسية',
+    link: '/',
+  },
+  {
+    name: 'مناهجنا',
+    link: '/',
+  },
+  {
+    name: 'طلابنا',
+    link: '/',
+  },
+  {
+    name: 'أهدافنا',
+    link: '/About',
+  },
+  {
+    name: 'المميزات',
+    link: '/',
+  },
+  {
+    name: 'الاسئلة الشائعة',
+    link: '/',
+  },
+  {
+    name: 'تواصل معنا',
+    link: '/Contact',
+  },
+]
 function Topnav() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
@@ -37,15 +69,9 @@ function Topnav() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav ms-auto">
-                    {[
-                        'الرئيسية',
-                        'مناهجنا',
-                        'طلابنا',
-                        'أهدافنا',
-                        'المميزات',
-                        'تواصل معنا'].map((title, idx) => (
-                        <li className="nav-item fw-bold mx-3" id={idx}>
-                            <a className="nav-link text-white" href="#">{title}</a>
+                    {navs.map((title, idx) => (
+                        <li className="nav-item cursor-pointer fw-bold mx-2" key={idx}>
+                            <a className="nav-link cursor-pointer text-white" href={title.link}>{title.name}</a>
                         </li>))}
 
                 </ul>

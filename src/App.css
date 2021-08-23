@@ -1,20 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
 :root {
   --blue: #1e90ff;
   --white: #ffffff;
   --derege:40deg;
-  
+  --main-font: 'Tajawal', sans-serif;;
 }
+
 .App {
   text-align: center;
 /*   background-image: url('./bg.svg');
   background-image: url('./Design98-1.jpg'); */
   background-size:90%;
+  position: relative;
   background-repeat: no-repeat;
   background-position: center;
 /*   height: 768px !important;
   width: 1366px; */
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   
+}
+header .nav-item :hover {
+  text-decoration: underline;     
+  text-decoration-color: white;  
+  text-decoration-style: solid;  
+  border-radius: 5px;
 }
 
 .sari-card{
@@ -27,10 +39,10 @@
   -webkit-transform: rotate(var(--derege)); /* Chrome, Safari, Opera */
   box-shadow: 12px 12px 0px 4px rgba(253, 221, 81, 0.438);
 
-  width: 50vh;
-  height: 52vh;
-  top: -25vh;
-  left: -60px;
+  width: 50%;
+  height: 52%;
+  top: -52%;
+  left: -27%;
   transform: rotate(var(--derege));
 }
 .top-card,.buttom-card{
@@ -38,23 +50,32 @@
 
 }
 .buttom-card{
-  height: 31rem;
-  width: 58rem;
+  
+  height: 29rem;
+  width: 60%;
+  float: right;
   position: absolute;
-  bottom: -3rem;
+  bottom: 0px !important;
+  padding-left: 50px;
   right: 0;
   border-bottom-left-radius: 355px;
   border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  box-shadow: -12px 9px 0px 1px  rgba(253, 221, 81, 0.438);
+text-align: right;
 
+}
+.back{
+  z-index: -1 !important;
 }
 
 .App-header {
-  min-height: 100vh;
+  min-height: 100%;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 .img-hero{
-  width: 42vw;
+  width: 47vw;
   position: absolute;
   top: 6.5rem;
   left: 8rem;
@@ -64,17 +85,18 @@
 .img-hero img{
   width: 100%;
 }
-ul.navbar-nav li:last-child{
+header ul.navbar-nav li:last-child{
   background-color: #FDDE51;
   border-radius: 5px;
 }
-ul.navbar-nav li:last-child a{
+header ul.navbar-nav li:last-child a{
 
   color:#566777 !important;
   
 }
 ul.navbar-nav li a{
-  font-family: 'Tajawal', sans-serif;
+  font-family: var(--main-font);
+
 }
 footer div div {
   display: inline-block;
@@ -86,5 +108,60 @@ footer div div a {
   margin-inline: 3rem;
   border-radius: 25%;
   color: white;
+  text-decoration: none;
 
+}
+.white-card{
+  height: 100px;
+  width: 333px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 100px;
+}
+.buttom-card p{
+  font-family: var(--main-font);
+  font-size:4.4rem;
+  color: #727f8f;
+}
+.buttom-card button{
+  font-family: var(--main-font);
+  font-size:2.3rem;
+  font: weight 400px;
+  color: #FDDE51;
+}
+
+.buttom-card p strong {
+  font-size:4.5rem;
+}
+footer{
+  position: relative;
+  top: -50px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttom-card{
+    margin-left: calc(5rem + 5vmin)!important;
+  }
+  
+}
+/*/576px/*/
+@media screen and (max-width: 576px) {
+ 
+  .App , .img-hero, .buttom-card, .top-card, footer { 
+    position:static;
+  }
+  .img-hero{
+    width:100%;
+  }
+  .App-header{
+    min-height: auto;
+  }
+  .buttom-card{
+    width:100%;
+  }
+  .top-card{
+    display: none;
+  }
 }
