@@ -120,6 +120,11 @@ footer div div a {
   bottom: 0;
   border-top-left-radius: 100px;
 }
+.white-card p{
+  font-family: var(--main-font);
+  color: #727f8f;
+
+}
 .buttom-card p{
   font-family: var(--main-font);
   font-size:4.4rem;

@@ -25,8 +25,9 @@ function App() {
       <div className='img-hero'>
         <img src={heroImage}/>
       </div>
-      <div className='white-card'>
-        
+      <div className='white-card pt-3 fs-5'>
+        <p className='mb-1'><b>www.joudkh.com</b></p>
+        <p><b>info@joudkh.com</b></p>
       </div>
       <Footer/>
     </div>
