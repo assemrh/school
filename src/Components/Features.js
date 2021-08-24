@@ -1,7 +1,7 @@
 import React from 'react'
 import Topnav from './Topnav'
 import Footer from './Footer'
-import heroImage from '../img/hero-image12.jpg'
+//import heroImage from '../img/hero-image12.jpg'
 
 
 function Features() {
@@ -11,7 +11,7 @@ function Features() {
           <Topnav/>
         </header>
         <div className='sari-card top-card  back'/>
-        <div className='sari-card buttom-card w-65 back ms-5 pt-5'>
+        <div className='sari-card buttom-card w-md-100 w-65 back ms-5 pt-5'>
           <div className='row justify-content-end me-md-5 mt-2'>
             <div className='col-md-8 col-xs-12 mt-md-3'>
               <p className='fs-1' >  <strong> المميزات </strong></p>

@@ -8,7 +8,7 @@ import FAQ from './Components/FAQ';
 import Features from './Components/Features';
 import Students from './Components/Students';
 import Courses from './Components/Courses'
-import { BrowserRouter as Router, Route, Link, NavLink, Switch } from 'react-router-dom' ;
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom' ;
 
 //import reportWebVitals from './reportWebVitals';
 //students
