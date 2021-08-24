@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400&display=swap');
 :root {
   --blue: #1e90ff;
   --white: #ffffff;
@@ -71,10 +71,15 @@ header .nav-item :hover {
 text-align: right;
 
 }
-.back{
-  z-index: -1 !important;
+/* .back{
+  z-index: 1 !important;
 }
-
+/*992px*/
+@media screen and (min-width: 992px) {
+  .back-lg{
+    z-index: -1 !important;
+  }
+} */
 .App-header {
   min-height: 100%;
   font-size: calc(10px + 2vmin);
@@ -86,6 +91,10 @@ text-align: right;
   top: 9.5rem;
   left: 7rem;
   box-shadow: -8px 8px 0px 1px  rgba(255, 255, 255, 0.849);
+}
+.img-hero, .navbar-brand{
+  z-index: 3;
+
 }
 
 .img-hero img, .top-hero img {
@@ -137,11 +146,12 @@ footer div div a {
   font-size:4.4rem;
   color: #727f8f;
 }
-.buttom-card button{
+.buttom-card a{
   font-family: var(--main-font);
-  font-size:2.3rem;
-  font: weight 400px;
+  font-size:1.7rem;
   color: #FDDE51;
+  cursor: pointer !important;
+  z-index: 1 !important;
 }
 
 .buttom-card p strong {
@@ -216,11 +226,5 @@ footer{
   }
   footer ul {
     min-width: 100vw;
-  }
-}
-/*992px*/
-@media screen and (min-width: 992px) {
-  .back-lg{
-    z-index: -1 !important;
   }
 }
