@@ -1,10 +1,23 @@
 import React from 'react'
+import Topnav from './Topnav'
+import Footer from './Footer'
+import Question from './Question'
+
 
 function FAQ() {
     return (
-        <div>
-            
+        <div className="App">
+        <header className="App-header">
+          <Topnav/>
+        </header>
+        <div className='sari-card top-card  back'/>
+        <div className='sari-card buttom-card back ms-5 pt-3'>
+  
         </div>
+        <Question />
+
+        <Footer/>
+      </div>
     )
 }
 

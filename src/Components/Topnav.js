@@ -26,8 +26,9 @@
  */
 
 import React from 'react'
-
-
+import logoNav from '../img/logoNav.png'
+import {Link} from 'react-router-dom'
+//<Link to="/">Home</Link>
 
 let navs = [
   {
@@ -36,11 +37,11 @@ let navs = [
   },
   {
     name: 'مناهجنا',
-    link: '/',
+    link: '/courses',
   },
   {
     name: 'طلابنا',
-    link: '/',
+    link: '/students',
   },
   {
     name: 'أهدافنا',
@@ -48,11 +49,11 @@ let navs = [
   },
   {
     name: 'المميزات',
-    link: '/',
+    link: '/features',
   },
   {
     name: 'الاسئلة الشائعة',
-    link: '/',
+    link: '/faq',
   },
   {
     name: 'تواصل معنا',
@@ -63,7 +64,9 @@ function Topnav() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">
               <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <Link to="/" className="navbar-brand" >
+                    <img src={logoNav} style={{width: '225px'}}/>
+                </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
@@ -71,7 +74,7 @@ function Topnav() {
                 <ul className="navbar-nav ms-auto">
                     {navs.map((title, idx) => (
                         <li className="nav-item cursor-pointer fw-bold mx-2" key={idx}>
-                            <a className="nav-link cursor-pointer text-white" href={title.link}>{title.name}</a>
+                            <Link className="nav-link cursor-pointer text-white" to={title.link}>{title.name}</Link>
                         </li>))}
 
                 </ul>
