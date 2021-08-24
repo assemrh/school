@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.c487949c.chunk.css",
-    "main.js": "/static/js/main.54552057.chunk.js",
-    "main.js.map": "/static/js/main.54552057.chunk.js.map",
+    "main.css": "/static/css/main.362404a5.chunk.css",
+    "main.js": "/static/js/main.3414625e.chunk.js",
+    "main.js.map": "/static/js/main.3414625e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6a4d2d71.js",
     "runtime-main.js.map": "/static/js/runtime-main.6a4d2d71.js.map",
     "static/js/2.63bf4efb.chunk.js": "/static/js/2.63bf4efb.chunk.js",
     "static/js/2.63bf4efb.chunk.js.map": "/static/js/2.63bf4efb.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.c487949c.chunk.css.map": "/static/css/main.c487949c.chunk.css.map",
+    "static/css/main.362404a5.chunk.css.map": "/static/css/main.362404a5.chunk.css.map",
     "static/js/2.63bf4efb.chunk.js.LICENSE.txt": "/static/js/2.63bf4efb.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/January-2011-plain.22281292.svg",
     "static/media/ahdaph.643ae23e.jpg": "/static/media/ahdaph.643ae23e.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.6a4d2d71.js",
     "static/js/2.63bf4efb.chunk.js",
-    "static/css/main.c487949c.chunk.css",
-    "static/js/main.54552057.chunk.js"
+    "static/css/main.362404a5.chunk.css",
+    "static/js/main.3414625e.chunk.js"
   ]
 }
