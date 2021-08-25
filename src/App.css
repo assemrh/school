@@ -1,11 +1,15 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400&display=swap');
+
 :root {
   --blue: #1e90ff;
   --white: #ffffff;
   --derege:40deg;
   --main-font: 'Tajawal', sans-serif;;
 }
+
+
+
 *{
   font-family: var(--main-font);
 }
@@ -70,6 +74,45 @@ header .nav-item :hover {
   box-shadow: -12px 9px 0px 1px  rgba(253, 221, 81, 0.438);
 text-align: right;
 
+}
+/* #contact  */
+#contact .card-title{
+  font-family: var(--main-font);
+  font-size:xx-large;
+  font-weight: 700 !important;
+  color: #566678;
+}
+#contact a{
+  text-decoration: none;
+
+}
+#contact .card{
+margin-left: auto !important;
+margin-right: auto !important;
+min-height: 28rem;
+border-radius: 5rem;
+box-shadow: -12px 9px 0px 1px  rgba(253, 221, 81, 0.438);
+}
+#contact .card div{
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  
+  }
+#contact .container{
+  width: max-content;
+  
+}
+#contact a:hover{
+  color: #919aa3;
+}
+#contact .row {
+  color: #566678;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  font-size:xx-large;
+
+  text-align: left;
 }
 /* .back{
   z-index: 1 !important;

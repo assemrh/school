@@ -13,7 +13,7 @@ function FAQ() {
         </header>
         <div className='sari-card top-card  back'/>
 
-        <div className='sari-card buttom-card back ms-5 pt-3  d-none d-md-block' >
+        <div className='sari-card buttom-card back ms-5 pt-3  d-none d-md-block' style={{zIndex: '-1'}}>
   
         </div>
         <Question />
