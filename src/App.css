@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400&display=swap');
 :root {
   --blue: #1e90ff;
   --white: #ffffff;
@@ -8,6 +8,10 @@
 }
 *{
   font-family: var(--main-font);
+}
+.bg-gold{
+  background-color: #FDDE51 !important;
+
 }
 .App {
   text-align: center;
@@ -67,10 +71,15 @@ header .nav-item :hover {
 text-align: right;
 
 }
-.back{
-  z-index: -1 !important;
+/* .back{
+  z-index: 1 !important;
 }
-
+/*992px*/
+@media screen and (min-width: 992px) {
+  .back-lg{
+    z-index: -1 !important;
+  }
+} */
 .App-header {
   min-height: 100%;
   font-size: calc(10px + 2vmin);
@@ -80,11 +89,15 @@ text-align: right;
   width: 47vw;
   position: absolute;
   top: 9.5rem;
-  left: 8rem;
+  left: 7rem;
   box-shadow: -8px 8px 0px 1px  rgba(255, 255, 255, 0.849);
 }
+.img-hero, .navbar-brand{
+  z-index: 3;
 
-.img-hero img{
+}
+
+.img-hero img, .top-hero img {
   width: 100%;
 }
 header ul.navbar-nav li:last-child{
@@ -114,10 +127,11 @@ footer div div a {
 
 }
 .white-card{
-  height: 100px;
+  height: 40px;
   width: 333px;
   background-color: white;
   position: absolute;
+  padding-top: 10%;
   right: 0;
   bottom: 0;
   border-top-left-radius: 100px;
@@ -132,11 +146,12 @@ footer div div a {
   font-size:4.4rem;
   color: #727f8f;
 }
-.buttom-card button{
+.buttom-card a{
   font-family: var(--main-font);
-  font-size:2.3rem;
-  font: weight 400px;
+  font-size:1.7rem;
   color: #FDDE51;
+  cursor: pointer !important;
+  z-index: 1 !important;
 }
 
 .buttom-card p strong {
@@ -154,35 +169,62 @@ footer{
 }
 
 .q-container, .q-container .card {
-  box-shadow: 10px 5px 5px 1px rgba(114, 114, 114, 0.2), -10px -5px 5px 1px rgb(114, 114, 114, 0.2);
+  box-shadow: 5px 3px 5px 1px rgba(114, 114, 114, 0.2), -5px -3px 5px 1px rgb(114, 114, 114, 0.2);
   border-radius: 25px;
 }
 .q-container .card {
   color: white;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .buttom-card{
     margin-left: calc(5rem + 5vmin)!important;
   }
-  
-}
-/*/576px/*/
-@media screen and (max-width: 576px) {
- 
-  .App , .img-hero, .buttom-card, .top-card, footer { 
-    position:static;
+  .App , .buttom-card, footer { 
+    display: block ;
   }
+  .App , .img-hero, .buttom-card, footer { 
+    position:static  ;
+  }
+
   .img-hero{
     width:100%;
   }
+
   .App-header{
     min-height: auto;
   }
-  .buttom-card{
+
+  
+  .navbar-brand{
+    background-color: #fdde51;
+    padding-inline: 13px;
+    border-radius: 25px;
+  }
+  
+  .img-hero{
     width:100%;
   }
-  .top-card{
-    display: none;
+  
+  .buttom-card{
+    margin-bottom: 2rem;
+    width:90% !important;
+    padding-left: 10px;
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    margin-inline: 17px ;
+  }
+  footer ul li a {
+    font-size:.90rem;
+  }
+  footer ul > li {
+    display:inline-flex;
+
+    margin-inline:.75rem !important;
+    margin-right:.75rem !important;
+    margin-left:.75rem !important;
+  }
+  footer ul {
+    min-width: 100vw;
   }
 }

@@ -3,6 +3,7 @@ import heroImage from '../img/stu.jpg'
 import '../App.css'
 import Footer from './Footer'
 import Topnav from './Topnav'
+import {Tophero , Hero} from './Tophero'
 
 function Students() {
     return (
@@ -11,6 +12,8 @@ function Students() {
           <Topnav/>
         </header>
         <div className='sari-card top-card  back'/>
+        <Tophero src= {heroImage}/>
+
         <div className='sari-card buttom-card w-65 back ms-5 pt-5'>
           <div className='row justify-content-end me-md-5 mt-2'>
             <div className='col-md-8 col-xs-12 mt-md-3 rtl'>
@@ -23,9 +26,8 @@ function Students() {
     
         </div>
         <div style={{height:"100vh"}} />
-        <div className='img-hero'>
-              <img src={heroImage}/>
-            </div>
+        <Hero src= {heroImage}/>
+
     
     
         <Footer/>
